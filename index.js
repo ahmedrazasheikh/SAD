@@ -62,8 +62,8 @@ app.use('/api/v1', (req, res, next) => {
 
 
 const __dirname = path.resolve();
-app.use('/', express.static(path.join(__dirname, './web/build')))
-app.use('*', express.static(path.join(__dirname, './web/build')))
+app.use('/', express.static(path.join(__dirname, './my-app/build')))
+app.use('*', express.static(path.join(__dirname, './my-app/build')))
 
 app.listen(port, () => {
     console.log(`http://localhost:${port}`)
